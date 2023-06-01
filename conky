@@ -1,0 +1,42 @@
+conky.config = {
+
+background = true,
+use_xft = true,
+xftalpha = 0.8,
+
+-- Update interval in seconds.
+update_interval = 180,
+
+-- This is the number of times Conky will update before quitting.
+-- Set to zero to run forever.
+total_run_times = 0,
+
+-- Create own window instead of using desktop.
+own_window = true,
+own_window_argb_visual = true,
+own_window_class = 'Conky',
+own_window_hints = 'undecorated,below,sticky,skip_taskbar',
+own_window_transparent = true,
+own_window_type = 'desktop',
+
+-- Use double buffering (reduces flicker, may not work for everyone).
+double_buffer = true,
+
+-- set to true if you want all text to be in uppercase.
+uppercase = false,
+
+-- Number of cpu samples to average.
+-- Set to 1 to disable averaging.
+cpu_avg_samples = 4,
+
+-- Force UTF8? note that UTF8 support required XFT.
+override_utf8_locale = true,
+
+gap_x = 60,
+gap_y = 60,
+color = 'CCCCCC',
+}
+
+conky.text = [[
+${voffset 1}${font Sans:size=15}${color}${exec fortune wisdom-fr 2>/dev/null}${font}${voffset -1}
+]]
