@@ -12,7 +12,7 @@ Une liste de citations en Français pour [fortune-mod](https://github.com/shlomi
 ```sh
 cd ~/Téléchargements/fortune-mod-wisdom-fr-1.1
 ```
-**Astuce** : Utilise la tabulation (touche Tab) pour compléter la destination.
+**Astuce** : Utilise l'[auto-complétion](https://fr.wikipedia.org/wiki/Compl%C3%A8tement_automatique#Interpr%C3%A9teurs_de_commandes) (touche Tab) pour compléter la destination.
 * Exécute la commande `./install.sh` pour installer les citations
 
 
@@ -30,15 +30,14 @@ pikaur -S fortune-mod-wisdom-fr
 ```
 * Puis, le paquet `fortune` avec la commande `brew install fortune`
 * Ensuite, suis les instructions pour GNU/Linux.
-* Si le script d'installation ne fonctionne pas, installe les fichiers Asie,Occident,RastAfrica et leurs fichiers .dat dans le dossier `/usr/share/fortune/wisdom-fr` avec les droits 644
 
 
 
 # Conky
 
-[Conky](https://github.com/brndnmtthws/conky) est utilisée pour afficher des informations en temps réel sur le bureau d'un utilisateur GNU/Linux.
+[Conky](https://github.com/brndnmtthws/conky) est utilisé pour afficher des informations en temps réel sur le bureau d'un utilisateur GNU/Linux.
 
-Si tu veux que les citations soient sur le bureau, installe ce paquet. Puis copie le fichier 'conky' de ce dépot pour le placer dans `~/.conky/Citations`.
+Si tu veux que les citations s'affichent sur le bureau, installe `conky` sur ta distribution. Puis copie le fichier 'conky' de ce dépot pour le placer dans `~/.conky/Citations`.
 
 
 
