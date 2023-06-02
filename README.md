@@ -10,15 +10,15 @@ Une liste de citations en Français pour [fortune-mod](https://github.com/shlomi
 sudo apt install fortune-mod
 ```
 2. Télécharge le `Code`(bouton de couleur verte sur cette page) au format .zip dans ton dossier `~/Téléchargements`
-* Décompresse l'archive récupérée
+3. Décompresse l'archive récupérée
 ```sh
 cd ~/Téléchargements && unzip fortune-mod-wisdom-fr-main.zip
 ```
-3. Place-toi ensuite dans le dossier crée
+4. Place-toi ensuite dans le dossier crée
 ```sh
 cd fortune-mod-wisdom-fr-main
 ```
-4. Exécute la commande `./install.sh` pour installer les citations
+5. Exécute la commande `./install.sh` pour installer les citations
 
 ### Pour Archlinux et ses dérivées qui utilisent le dépot de l'AUR
 Utilise par example `pikaur` avec la commande
