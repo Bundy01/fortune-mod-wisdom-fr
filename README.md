@@ -14,7 +14,7 @@ sudo apt install fortune-mod
 ```sh
 cd ~/Téléchargements && unzip fortune-mod-wisdom-fr-main.zip
 ```
-4. Place-toi ensuite dans le dossier crée
+4. Place-toi ensuite dans le dossier créé
 ```sh
 cd fortune-mod-wisdom-fr-main
 ```
@@ -53,8 +53,15 @@ sh -c "conky -c ~/.conky/Citations &"
 
 Ajoute la commande `fortune wisdom-fr` dans le fichier `~/.bashrc` ou équivalent pour avoir une citation à chaque ouverture du terminal.
 
-Le nombre de caractères maximal sur une même ligne est de 73, si ton terminal en à moins, tu peux utiliser la commande (utilisable aussi avec le fichier 'Conky') ou faire en sorte que la longueur de celui-ci soit supérieure au nombre de caractères.
+Le nombre de caractères maximal sur une même ligne est de 73, si ton terminal en à moins, tu peux utiliser la commande ci-dessous (utilisable aussi avec le fichier 'Conky') ou faire en sorte que la longueur de celui-ci soit supérieure au nombre de caractères.
 ```sh
 fortune wisdom-fr|fold -sw55
 ```
 Elle permet d'afficher une ligne jusqu'a 55 caractères et de ne pas couper un mot lors d'un retour de ligne.
+
+
+
+
+# Contribution
+
+Tu peux me suggérer tes auteurs préférés en ouvrant une 'issue'.
