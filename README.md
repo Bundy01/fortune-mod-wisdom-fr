@@ -6,32 +6,32 @@ Une liste de citations en Français pour [fortune-mod](https://github.com/shlomi
 # Installation
 ### pour GNU/Linux
 1. Installe la dépendance `fortune-mod` sur ta distribution avec par exemple
-```sh
+```console
 sudo apt install fortune-mod
 ```
 2. Télécharge l'archive dans /tmp
-```sh
+```console
 cd /tmp && curl -LOSs https://github.com/Bundy01/fortune-mod-wisdom-fr/archive/refs/heads/main.zip
 ```
 3. Décompresse l'archive récupérée
-```sh
+```console
 unzip main.zip
 ```
 4. Place-toi ensuite dans le dossier créé
-```sh
+```console
 cd fortune-mod-wisdom-fr-main
 ```
-5. Exécute la commande `./install.sh` pour installer les citations.
+5. Exécute la commande `./install.sh` pour installer les citations
 
 ### Pour Archlinux et ses dérivées qui utilisent le dépôt de l'AUR
 Utilise par exemple `pikaur` avec la commande
-```sh
+```console
 pikaur -S fortune-mod-wisdom-fr
 ```
 
 ### pour Mac
 * Si ce n'est pas déjà fait, installe `Homebrew`
-```sh
+```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 * Puis, le paquet `fortune` avec la commande `brew install fortune`
@@ -45,12 +45,12 @@ pikaur -S fortune-mod-wisdom-fr
 Si tu veux que les citations s'affichent sur le bureau, installe `conky` sur ta distribution. Puis copie le fichier 'Conky' de ce dépôt pour le placer dans `~/.conky/Citations`.
 
 Pour lancer ce logiciel au démarrage de la machine, ajoute cette commande dans les paramètres de ton environnement de bureau.
-```sh
+```console
 sh -c "conky -c ~/.conky/Citations &"
 ```
 
 **Les citations sont désormais sur une ligne, pour éviter quelles prennent la largeur de l’écran, modifie le fichier pour ajouter cette commande entre** `exec` **et** `2>/dev/null`
-```sh
+```console
 fortune wisdom-fr|fold -sw55
 ```
 Il s'agit d'un exemple qui permet d'afficher une ligne jusqu’à 55 caractères et de ne pas couper un mot lors d'un retour de ligne.
